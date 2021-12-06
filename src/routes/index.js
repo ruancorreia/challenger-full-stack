@@ -5,4 +5,8 @@ router.get("/", (req, res)=>{
     res.send("Home")
 });
 
+router.get("/inicial", (req, res)=>{
+    res.render("home")
+});
+
 module.exports = router;
