@@ -8,6 +8,19 @@ const app = express();
 const port = 3003;
 const router = require("./src/routes")
 
+//importando o banco de dados
+const connection = require('./src/database/database')
+
+//database
+
+connection
+    .authenticate()
+    .then(()=>{
+        console.log("conexão com o BD efetuada com sucesso!")
+    })
+    .catch((msgErro)=>{
+        console.log(msgErro);
+    })
 
 //Importando os modulos 
 const path = require("path");
