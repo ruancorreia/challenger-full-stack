@@ -9,8 +9,9 @@ router.get("/inicial", (req, res)=>{
     res.render("home")
 });
 
-router.get("/formulario", (req, res)=>{
-    res.send("Formulario enviado!")
+
+router.post("/formulario", (req, res)=>{
+    res.render("formulario")
 });
 
 module.exports = router;
