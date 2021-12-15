@@ -19,10 +19,15 @@
   },
   "homepage": "https://github.com/ruancorreia/challenger-full-stack#readme",
   "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "mysql2": "^2.3.3",
-    "nodemon": "^2.0.15",
-    "sequelize": "^6.12.0-beta.1"
+      "ejs": "^3.1.6",
+      "express": "^4.17.1",
+      "express-validator": "^6.12.1",
+      "method-override": "^3.0.0",
+      "morgan": "^1.10.0",
+      "multer": "^1.4.3",
+      "mysql2": "^2.3.2",
+      "sequelize": "^6.8.0"
   }
 }
+
+

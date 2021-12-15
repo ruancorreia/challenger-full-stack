@@ -1,17 +1,11 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/", (req, res)=>{
-    res.send("Home")
-});
+const IndexController = require("../controllers/indexController");
+const validateContact = require("../middleware/form-validator");
 
-router.get("/inicial", (req, res)=>{
-    res.render("home")
-});
+router.get("/", IndexController.index);
+router.post("/", validateContact, IndexController.contact);
 
-
-router.post("/formulario", (req, res)=>{
-    res.render("formulario")
-});
 
 module.exports = router;
